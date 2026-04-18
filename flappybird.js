@@ -59,8 +59,8 @@ function loop() {
         ctx.fillRect(p.x, p.y + gap, pipeWidth, canvas.height - p.y - gap);
 
         if (
-            player.x + 10 < p.x + pipeWidth &&
-            player.x + player.width - 10 > p.x &&
+            player.x + 30 < p.x + pipeWidth &&
+            player.x + player.width - 30 > p.x &&
             (player.y < p.y || player.y + player.height > p.y + gap)
         ) {
             gameOver = true;
